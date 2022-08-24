@@ -1,7 +1,7 @@
-version: "3.8"
+version: '3.8'
 services:
-  app:
+  crazy-color-clash:
     labels:
-      - "traefik.http.routers.app.rule=Host(`app.localhost`)"
+      - 'traefik.http.routers.crazy-color-clash.rule=Host(`crazycolorclash.localhost`)'
     volumes:
       - ./src:/var/www/html

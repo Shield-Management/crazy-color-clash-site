@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  app:
+    labels:
+      - "traefik.http.routers.app.rule=Host(`app.localhost`)"
+    volumes:
+      - ./src:/var/www/html

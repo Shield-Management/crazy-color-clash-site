@@ -12,6 +12,7 @@ jobs:
         run: docker network create traefik
       - name: Setup Docker container
         run: |
+          cp .env-example .env
           ./setup.sh
           docker ps | grep -q crazy-color-clash-crazy-color-clash-1
   lint:

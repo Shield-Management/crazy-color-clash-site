@@ -28,6 +28,10 @@
     <div class="bg-banner text-center">
         <h1>Crazy Color Clash</h1>
         <h3>Crazy colorful tapping battles</h3>
+
+        <object data="{{ asset('pics/app-store-logo.svg') }}" width="200" class="app-store-icon p-3"></object>
+        <p>Coming to the iOS App Store Soon!</p>
+
         <div class="row">
             <div class="col-md-4">
                 <img src="{{ asset('pics/game-min.png') }}" class="game-image">
@@ -39,11 +43,8 @@
                 <img src="{{ asset('pics/menu-min.png') }}" class="game-image">
             </div>
         </div>
-    </div>
 
-    <div class="container">
-        <h2>Coming to the iOS App Store Soon!</h2>
-        <object data="{{ asset('pics/app-store-logo.svg') }}" width="200" class="app-store-icon"></object>
+        <p class="p-3">By: Justin Hammond</p>
     </div>
 
     <div class="container">
@@ -64,15 +65,15 @@
         <div class="row">
             <h3>Basic Powerups</h3>
             <div class="col-md-4">
-                <h3>Surprise</h3>
+                <h4>Surprise</h4>
                 <img src="{{ asset('pics/surprise-min.jpg') }}" class="game-image">
             </div>
             <div class="col-md-4">
-                <h3>Lockout</h3>
+                <h4>Lockout</h4>
                 <img src="{{ asset('pics/lockout-min.jpg') }}" class="game-image">
             </div>
             <div class="col-md-4">
-                <h3>Blackout</h3>
+                <h4>Blackout</h4>
                 <img src="{{ asset('pics/blackout-min.jpg') }}" class="game-image">
             </div>
         </div>
@@ -82,39 +83,43 @@
         <div class="row">
             <h3>Powerup Pack 1</h3>
             <div class="col-md-4">
-                <h3>Boring</h3>
+                <h4>Boring</h4>
             </div>
             <div class="col-md-4">
-                <h3>Bombs</h3>
+                <h4>Bombs</h4>
             </div>
             <div class="col-md-4">
-                <h3>Blash</h3>
+                <h4>Clash</h4>
             </div>
         </div>
+
+        <hr />
 
         <div class="row">
             <h3>Powerup Pack 2</h3>
             <div class="col-md-4">
-                <h3>Reverse</h3>
+                <h4>Reverse</h4>
             </div>
             <div class="col-md-4">
-                <h3>Monochrome</h3>
+                <h4>Monochrome</h4>
             </div>
             <div class="col-md-4">
-                <h3>Nuke</h3>
+                <h4>Nuke</h4>
             </div>
         </div>
+
+        <hr />
 
         <div class="row">
             <h3>Powerup Pack 3</h3>
             <div class="col-md-4">
-                <h3>Thief</h3>
+                <h4>Thief</h4>
             </div>
             <div class="col-md-4">
-                <h3>Double Tap</h3>
+                <h4>Double Tap</h4>
             </div>
             <div class="col-md-4">
-                <h3>Shield</h3>
+                <h4>Shield</h4>
             </div>
         </div>
     </div>

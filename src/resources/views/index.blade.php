@@ -28,9 +28,17 @@
     <div class="bg-banner text-center">
         <h1>Crazy Color Clash</h1>
         <h3>Crazy colorful tapping battles</h3>
-        <img src="{{ asset('pics/game-min.png') }}" class="game-image">
-        <img src="{{ asset('pics/tutorial-min.png') }}" class="game-image">
-        <img src="{{ asset('pics/menu-min.png') }}" class="game-image">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{ asset('pics/game-min.png') }}" class="game-image">
+            </div>
+            <div class="col-md-4">
+                <img src="{{ asset('pics/tutorial-min.png') }}" class="game-image">
+            </div>
+            <div class="col-md-4">
+                <img src="{{ asset('pics/menu-min.png') }}" class="game-image">
+            </div>
+        </div>
     </div>
 
     <div class="container">
@@ -52,9 +60,63 @@
 
     <div class="container text-center">
         <h2>12 Exciting Powerups</h2>
-        <img src="{{ asset('pics/surprise-min.jpg') }}" class="game-image">
-        <img src="{{ asset('pics/lockout-min.jpg') }}" class="game-image">
-        <img src="{{ asset('pics/blackout-min.jpg') }}" class="game-image">
+
+        <div class="row">
+            <h3>Basic Powerups</h3>
+            <div class="col-md-4">
+                <h3>Surprise</h3>
+                <img src="{{ asset('pics/surprise-min.jpg') }}" class="game-image">
+            </div>
+            <div class="col-md-4">
+                <h3>Lockout</h3>
+                <img src="{{ asset('pics/lockout-min.jpg') }}" class="game-image">
+            </div>
+            <div class="col-md-4">
+                <h3>Blackout</h3>
+                <img src="{{ asset('pics/blackout-min.jpg') }}" class="game-image">
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+            <h3>Powerup Pack 1</h3>
+            <div class="col-md-4">
+                <h3>Boring</h3>
+            </div>
+            <div class="col-md-4">
+                <h3>Bombs</h3>
+            </div>
+            <div class="col-md-4">
+                <h3>Blash</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <h3>Powerup Pack 2</h3>
+            <div class="col-md-4">
+                <h3>Reverse</h3>
+            </div>
+            <div class="col-md-4">
+                <h3>Monochrome</h3>
+            </div>
+            <div class="col-md-4">
+                <h3>Nuke</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <h3>Powerup Pack 3</h3>
+            <div class="col-md-4">
+                <h3>Thief</h3>
+            </div>
+            <div class="col-md-4">
+                <h3>Double Tap</h3>
+            </div>
+            <div class="col-md-4">
+                <h3>Shield</h3>
+            </div>
+        </div>
     </div>
 
     <footer class="text-center">

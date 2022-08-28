@@ -26,21 +26,25 @@
 
 <body>
     <div class="bg-banner text-center">
+        <img src="{{ asset('pics/icon.png') }}" class="game-image">
         <h1>Crazy Color Clash</h1>
         <h3>Crazy colorful tapping battles</h3>
 
-        <object data="{{ asset('pics/app-store-logo.svg') }}" width="200" class="app-store-icon p-3"></object>
-        <p>Coming to the iOS App Store Soon!</p>
+        <a href="https://testflight.apple.com/join/5Vaqo19P">
+            <object data="{{ asset('pics/app-store-logo.svg') }}" width="200" class="app-store-icon p-3"
+                style="pointer-events: none;"></object>
+            <p>Join the public beta today!</p>
+        </a>
 
         <div class="row">
-            <div class="col-md-4">
-                <img src="{{ asset('pics/game-min.png') }}" class="game-image">
+            <div class="col">
+                <img src="{{ asset('pics/game-min.png') }}" class="game-image img-fluid">
             </div>
-            <div class="col-md-4">
-                <img src="{{ asset('pics/tutorial-min.png') }}" class="game-image">
+            <div class="col">
+                <img src="{{ asset('pics/tutorial-min.png') }}" class="game-image img-fluid">
             </div>
-            <div class="col-md-4">
-                <img src="{{ asset('pics/menu-min.png') }}" class="game-image">
+            <div class="col">
+                <img src="{{ asset('pics/menu-min.png') }}" class="game-image img-fluid">
             </div>
         </div>
 
@@ -60,21 +64,33 @@
     </div>
 
     <div class="container text-center">
+        <h2>Beta Testing</h2>
+        <p>Crazy Color Clash is currently in beta testing and is close to release. We could use your help by having you
+            download the app for free and giving it a try. We appreciate any and all feedback to help us polish the game
+            before its final release.</p>
+        <a href="https://testflight.apple.com/join/5Vaqo19P">
+            <object data="{{ asset('pics/app-store-logo.svg') }}" width="200" class="app-store-icon p-3"
+                style="pointer-events: none;"></object>
+            <p>Join the public beta today!</p>
+        </a>
+    </div>
+
+    <div class="container text-center">
         <h2>12 Exciting Powerups</h2>
 
         <div class="row">
             <h3>Basic Powerups</h3>
-            <div class="col-md-4">
+            <div class="col">
                 <h4>Surprise</h4>
-                <img src="{{ asset('pics/surprise-min.jpg') }}" class="game-image">
+                <img src="{{ asset('pics/surprise-min.jpg') }}" class="game-image img-fluid">
             </div>
-            <div class="col-md-4">
+            <div class="col">
                 <h4>Lockout</h4>
-                <img src="{{ asset('pics/lockout-min.jpg') }}" class="game-image">
+                <img src="{{ asset('pics/lockout-min.jpg') }}" class="game-image img-fluid">
             </div>
-            <div class="col-md-4">
+            <div class="col">
                 <h4>Blackout</h4>
-                <img src="{{ asset('pics/blackout-min.jpg') }}" class="game-image">
+                <img src="{{ asset('pics/blackout-min.jpg') }}" class="game-image img-fluid">
             </div>
         </div>
 
@@ -82,13 +98,13 @@
 
         <div class="row">
             <h3>Powerup Pack 1</h3>
-            <div class="col-md-4">
+            <div class="col">
                 <h4>Boring</h4>
             </div>
-            <div class="col-md-4">
+            <div class="col">
                 <h4>Bombs</h4>
             </div>
-            <div class="col-md-4">
+            <div class="col">
                 <h4>Clash</h4>
             </div>
         </div>
@@ -97,13 +113,13 @@
 
         <div class="row">
             <h3>Powerup Pack 2</h3>
-            <div class="col-md-4">
+            <div class="col">
                 <h4>Reverse</h4>
             </div>
-            <div class="col-md-4">
+            <div class="col">
                 <h4>Monochrome</h4>
             </div>
-            <div class="col-md-4">
+            <div class="col">
                 <h4>Nuke</h4>
             </div>
         </div>
@@ -112,13 +128,13 @@
 
         <div class="row">
             <h3>Powerup Pack 3</h3>
-            <div class="col-md-4">
+            <div class="col">
                 <h4>Thief</h4>
             </div>
-            <div class="col-md-4">
+            <div class="col">
                 <h4>Double Tap</h4>
             </div>
-            <div class="col-md-4">
+            <div class="col">
                 <h4>Shield</h4>
             </div>
         </div>

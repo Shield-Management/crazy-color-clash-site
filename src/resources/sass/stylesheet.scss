@@ -19,13 +19,16 @@ h1 {
 
 h2 {
   text-align: center;
-  font-size: 4vmin;
+  font-size: 4.5vmin;
+}
+
+h3 {
+    font-size: 3.5vmin;
 }
 
 h4 {
-  line-height: 1.375em;
-  font-weight: 400;
-  margin-bottom: 30px;
+  font-size: 3vmin;
+  bottom: 30px;
 }
 
 a,
@@ -85,21 +88,50 @@ footer {
   }
 }
 
+.bg-blue {
+  background-color: #3F9CF1;
+  color: #fff;
+}
+
+.bg-purple {
+  background-color: #996FDE;
+  color: #fff;
+}
+
+.bg-pink {
+  background-color: #FF8DC6;
+  color: #fff;
+}
+
+.bg-green {
+  background-color: #5EC472;
+  color: #fff;
+}
+
+.app-icon {
+  max-width: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  margin: 10px;
+}
+
 .app-store-icon {
   display: block;
   margin: auto;
 }
 
 .game-image {
-  border: 1px solid gray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 20px;
-  margin: 10px;
+  margin: 10px 0 20px 0;
 }
 
-// Media Queries
-
-@media screen and (max-width: 768px) {
-  h2 {
-    font-size: 6vmin;
-  }
+.capsule {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.22);
+  border-radius: 30px;
+  margin: 10px;
+  background-color: #fff;
+  color: #3F9CF1;
+  padding: 5px;
+  font-size: 3vmin;
 }

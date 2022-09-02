@@ -7,7 +7,7 @@ The website for the Crazy Color Clash iOS game.
 [![Build](https://github.com/Justintime50/crazy-color-clash-site/workflows/build/badge.svg)](https://github.com/Justintime50/crazy-color-clash-site/actions)
 [![Licence](https://img.shields.io/github/license/justintime50/crazy-color-clash-site)](LICENSE)
 
-<img src="https://raw.githubusercontent.com/justintime50/assets/main/src/crazy-color-clash-site/showcase.png" alt="Showcase">
+<img src="src/public/pics/icon.png" width=200 alt="Showcase">
 
 </div>
 

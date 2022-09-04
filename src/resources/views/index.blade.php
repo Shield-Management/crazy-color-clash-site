@@ -26,46 +26,48 @@
 
 <body>
     <div class="bg-banner text-center">
-        <img src="{{ asset('pics/icon.png') }}" class="app-icon">
-        <h1>Crazy Color Clash</h1>
-        <h2>Crazy colorful tapping battles</h2>
+        <div class="container">
+            <img src="{{ asset('pics/icon.png') }}" class="app-icon">
+            <h1>Crazy Color Clash</h1>
+            <h2>Crazy colorful tapping battles</h2>
 
-        <br />
+            <br />
 
-        <a href="https://testflight.apple.com/join/5Vaqo19P">
-            <object data="{{ asset('pics/app-store-logo.svg') }}" width="200" class="app-store-icon p-3"
-                style="pointer-events: none;"></object>
-            <h3>Join the public beta today!</h3>
-        </a>
+            <a href="https://testflight.apple.com/join/5Vaqo19P">
+                <object data="{{ asset('pics/app-store-logo.svg') }}" width="200" class="app-store-icon p-3"
+                    style="pointer-events: none;"></object>
+                <h3>Join the public beta today!</h3>
+            </a>
 
-        <div class="row">
-            <div class="col">
-                <img src="{{ asset('pics/game-min.png') }}" class="game-image img-fluid">
+            <div class="row">
+                <div class="col">
+                    <img src="{{ asset('pics/game-min.png') }}" class="game-image img-fluid">
+                </div>
+                <div class="col">
+                    <img src="{{ asset('pics/tutorial-min.png') }}" class="game-image img-fluid">
+                </div>
+                <div class="col">
+                    <img src="{{ asset('pics/menu-min.png') }}" class="game-image img-fluid">
+                </div>
             </div>
-            <div class="col">
-                <img src="{{ asset('pics/tutorial-min.png') }}" class="game-image img-fluid">
-            </div>
-            <div class="col">
-                <img src="{{ asset('pics/menu-min.png') }}" class="game-image img-fluid">
-            </div>
+
+            <p class="p-3">Developed By: <a href="https://justinpaulhammond.com">Justin Hammond</a></p>
         </div>
-
-        <p class="p-3">Developed By: <a href="https://justinpaulhammond.com">Justin Hammond</a></p>
     </div>
 
     <div class="container">
         <h2>Concept</h2>
         <div class="row text-center">
-            <div class="col-sm-3">
+            <div class="col-lg-3">
                 <p class="capsule">2 PLAYERS</p>
             </div>
-            <div class="col-sm-3">
+            <div class="col-lg-3">
                 <p class="capsule">1 DEVICE</p>
             </div>
-            <div class="col-sm-3">
+            <div class="col-lg-3">
                 <p class="capsule">90 SECONDS</p>
             </div>
-            <div class="col-sm-3">
+            <div class="col-lg-3">
                 <p class="capsule">12 POWERUPS</p>
             </div>
         </div>
@@ -99,12 +101,33 @@
     </div>
 
     <div class="container text-center">
-        <h2>12 Exciting Powerups</h2>
-        <p>There are various powerups that are granted for correct taps. Use your powerups to confuse and disorient your
-            opponent!</p>
-        <p>During the public beta, all in-app purchases are <strong>free</strong>! Three powerups are included in the
-            final release for
-            free while additional powerup packs can be purchased for $0.99.</p>
+        <h2>Testimonials</h2>
+        <p>"Awesome two player mobile game! It was perfect to play while waiting in line at Disneyland! My 7 and 8 year
+            old boys love playing it as well!" - <b>Brady</b></p>
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="{{ asset('pics/disneyland-playing.jpg') }}" class="testimonial-image">
+            </div>
+            <div class="col-sm-4">
+                <img src="{{ asset('pics/kids-playing-in-line.jpg') }}" class="testimonial-image">
+            </div>
+            <div class="col-sm-4">
+                <img src="{{ asset('pics/kids-playing.jpg') }}" class="testimonial-image">
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-banner">
+        <div class="container text-center">
+            <h2>12 Exciting Powerups</h2>
+            <p>There are various powerups that are granted for correct taps. Use your powerups to confuse and disorient
+                your
+                opponent!</p>
+            <p>During the public beta, all in-app purchases are <strong>free</strong>! Three powerups are included in
+                the
+                final release for
+                free while additional powerup packs can be purchased for $0.99.</p>
+        </div>
     </div>
 
     <div class="bg-pink">
@@ -178,7 +201,7 @@
                 <div class="col">
                     <h4>Nuke</h4>
                     <img src="{{ asset('pics/nuke-min.png') }}" class="game-image img-fluid">
-                    <p>Blows away all of your opponents powerups.</p>
+                    <p>Blows away half of all of your opponents powerups.</p>
                 </div>
             </div>
         </div>
@@ -209,6 +232,18 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="container text-center">
+        <h2>Project Development</h2>
+
+        <p>The game started as a hobby to learn Swift and iOS development and quickly turned into a full-blown App Store
+            offering. Hundreds of hours and thousands of play tests later - Crazy Color Clash was brought to the public.
+            You can find devlog videos detailing the development of the project (early on).</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DPlUEQtgA7U"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
     </div>
 
     <footer class="text-center">

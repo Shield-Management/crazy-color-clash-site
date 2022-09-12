@@ -240,10 +240,25 @@
         <p>The game started as a hobby to learn Swift and iOS development and quickly turned into a full-blown App Store
             offering. Hundreds of hours and thousands of play tests later - Crazy Color Clash was brought to the public.
             You can find devlog videos detailing the development of the project (early on).</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/DPlUEQtgA7U"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="pa-video-container">
+                    <iframe src="https://www.youtube.com/embed/DPlUEQtgA7U" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="pa-video-container">
+                    <iframe src="https://www.youtube.com/embed/drPVDWmM3Sk" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="text-center">

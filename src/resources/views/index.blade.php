@@ -108,10 +108,12 @@
                         alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>
             </div>
             <div class="col-sm-6 text-center">
-                <iframe width="476" height="847" src="https://www.youtube.com/embed/3rXwlH88iWU"
-                    title="Crazy Color Clash Teaser - iOS Game" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                <div class="pa-video-container">
+                    <iframe width="476" height="847" src="https://www.youtube.com/embed/3rXwlH88iWU"
+                        title="Crazy Color Clash Teaser - iOS Game" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </div>

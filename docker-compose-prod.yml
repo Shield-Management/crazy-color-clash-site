@@ -16,7 +16,7 @@ services:
       timeout: 10s
       retries: 3
     labels:
-      - 'traefik.http.routers.crazy-color-clash.rule=Host(`crazycolorclash.com`) || Host(`www.crazycolorclash.com`)'
+      - 'traefik.http.routers.crazy-color-clash.rule=Host(`crazycolorclash.com`, `www.crazycolorclash.com`)'
       - 'traefik.http.routers.crazy-color-clash.tls=true'
       - 'traefik.http.routers.crazy-color-clash.tls.certresolver=letsencrypt'
     volumes:

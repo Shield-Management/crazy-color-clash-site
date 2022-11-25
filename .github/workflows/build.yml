@@ -30,6 +30,7 @@ jobs:
         run: cd src && composer install --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
       - name: Lint
         run: cd src && composer lint
+  # TODO: Lint CSS
   deploy:
     needs: ["docker", "lint"]
     runs-on: ubuntu-latest

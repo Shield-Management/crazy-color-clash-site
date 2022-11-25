@@ -3,22 +3,27 @@
     "scripts": {
         "dev": "npm run development",
         "development": "mix",
-        "watch": "mix watch",
-        "watch-poll": "mix watch -- --watch-options-poll=1000",
         "hot": "mix watch --hot",
+        "lint": "npx stylelint resources/sass/*.scss --config node_modules/justintime50-styles/src/css/.stylelintrc.json --custom-syntax postcss-scss",
+        "fix": "npx stylelint resources/sass/*.scss --config node_modules/justintime50-styles/src/css/.stylelintrc.json --custom-syntax postcss-scss --fix",
         "prod": "npm run production",
-        "production": "mix --production"
+        "production": "mix --production",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "watch": "mix watch"
     },
     "devDependencies": {
         "@popperjs/core": "^2.11.3",
         "axios": "^0.21",
         "bootstrap": "^5.2.0",
+        "justintime50-styles": "0.2.0",
         "laravel-mix": "^6.0.6",
         "pineapple-library": "^3.1.0",
         "postcss": "^8.1.14",
         "postcss-scss": "^4.0.4",
         "resolve-url-loader": "^5.0.0",
         "sass": "^1.49.8",
-        "sass-loader": "^12.6"
+        "sass-loader": "^12.6",
+        "stylelint": "^14.15.0",
+        "stylelint-config-standard": "^29.0.0"
     }
 }

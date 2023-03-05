@@ -17,7 +17,7 @@ jobs:
       - name: Setup Docker container
         run: |
           cp src/.env-example src/.env
-          LOG_CHANNEL=stderr ./setup.sh
+          LOG_CHANNEL=stderr SESSION_DRIVER=array ./setup.sh
   lint:
     runs-on: ubuntu-latest
     steps:

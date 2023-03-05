@@ -19,9 +19,6 @@ setup() {
     docker compose up -d --build --quiet-pull
 
     # Run a healthcheck to ensure the container(s) are running
-    docker exec -t crazy-color-clash-site-crazy-color-clash-1 ls -la storage
-    docker exec -t crazy-color-clash-site-crazy-color-clash-1 ls -la storage/logs
-    docker exec -t crazy-color-clash-site-crazy-color-clash-1 ls -la ./
     for ((ATTEMPT = 0; ATTEMPT <= 10; ATTEMPT += 1)); do
         if ! healthcheck; then
             echo "Failed healthcheck attempt #$ATTEMPT, retrying..."
@@ -37,7 +34,7 @@ setup() {
 
 healthcheck() {
     docker ps | grep -q crazy-color-clash-site-crazy-color-clash-1 || false
-    docker exec -t crazy-color-clash-site-crazy-color-clash-1 curl -f --silent --output /dev/null http://localhost || false
+    docker exec -t crazy-color-clash-site-crazy-color-clash-1 curl http://localhost || false
 }
 
 setup

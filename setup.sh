@@ -22,6 +22,7 @@ setup() {
     for ((ATTEMPT = 0; ATTEMPT <= 10; ATTEMPT += 1)); do
         if ! healthcheck; then
             echo "Failed healthcheck attempt #$ATTEMPT, retrying..."
+            docker exec -t crazy-color-clash-site-crazy-color-clash-1 ls -la storage
             sleep 1
         else
             echo "Healthcheck passed!"

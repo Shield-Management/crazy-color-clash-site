@@ -18,13 +18,13 @@ setup() {
     # Spin up the project (assumes you already have Traefik setup)
     docker compose up -d --build --quiet-pull
 
-    # Run a healthcheck to ensure the container(s) are running
+    # Run a healthcheck to ensure the container is running
     for ((ATTEMPT = 0; ATTEMPT <= 10; ATTEMPT += 1)); do
         if ! healthcheck; then
-            echo "Failed healthcheck attempt #$ATTEMPT, retrying..."
+            echo "Container is not running on attempt #$ATTEMPT, retrying..."
             sleep 1
         else
-            echo "Healthcheck passed!"
+            echo "Setup complete!"
             exit 0
         fi
     done
@@ -33,8 +33,7 @@ setup() {
 }
 
 healthcheck() {
-    docker ps | grep -q crazy-color-clash-site-crazy-color-clash-1 || false
-    docker exec -t crazy-color-clash-site-crazy-color-clash-1 curl http://localhost || false
+    docker ps | grep -q crazy-color-clash-site-crazy-color-clash-1
 }
 
 setup

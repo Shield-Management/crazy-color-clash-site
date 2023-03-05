@@ -5,3 +5,5 @@ services:
       - 'traefik.http.routers.crazy-color-clash.rule=Host(`crazycolorclash.localhost`)'
     volumes:
       - ./src:/var/www/html
+    environment:
+      - LOG_CHANNEL

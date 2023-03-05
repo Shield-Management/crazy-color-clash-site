@@ -17,8 +17,6 @@ main() {
 
     # Spin up the project (assumes you already have Traefik setup)
     docker compose up -d --build --quiet-pull
-
-    cd src || exit 1
 }
 
 main

@@ -21,4 +21,4 @@ services:
       - 'traefik.http.routers.crazy-color-clash.tls.certresolver=letsencrypt'
     volumes:
       - ./src/storage/logs:/var/www/html/storage/logs
-      - ./src/storage/crazy-color-clash/public:/var/www/html/storage/crazy-color-clash/public
+      - ./src/storage/app/public:/var/www/html/storage/app/public

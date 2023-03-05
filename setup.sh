@@ -16,7 +16,7 @@ setup() {
     cd .. || exit 1
 
     # Spin up the project (assumes you already have Traefik setup)
-    docker compose up -d --force-recreate --quiet-pull
+    docker compose up -d --build --quiet-pull
 
     # Run a healthcheck to ensure the container(s) are running
     docker exec -t crazy-color-clash-site-crazy-color-clash-1 ls -la storage

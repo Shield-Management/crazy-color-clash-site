@@ -23,9 +23,10 @@ setup() {
         if healthcheck != 0; then
             echo "Failed healthcheck attempt #$ATTEMPT, retrying..."
             sleep 1
+        else
+            echo "Healthcheck passed!"
+            exit 0
         fi
-        echo "Healthcheck passed!"
-        exit 0
     done
 }
 

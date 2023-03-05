@@ -19,10 +19,12 @@ setup() {
     docker compose up -d --force-recreate --quiet-pull
 
     # Run a healthcheck to ensure the container(s) are running
+    docker exec -t crazy-color-clash-site-crazy-color-clash-1 ls -la storage
+    docker exec -t crazy-color-clash-site-crazy-color-clash-1 ls -la storage/logs
+    docker exec -t crazy-color-clash-site-crazy-color-clash-1 ls -la ./
     for ((ATTEMPT = 0; ATTEMPT <= 10; ATTEMPT += 1)); do
         if ! healthcheck; then
             echo "Failed healthcheck attempt #$ATTEMPT, retrying..."
-            docker exec -t crazy-color-clash-site-crazy-color-clash-1 ls -la storage
             sleep 1
         else
             echo "Healthcheck passed!"

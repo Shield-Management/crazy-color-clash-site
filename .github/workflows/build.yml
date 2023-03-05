@@ -17,7 +17,7 @@ jobs:
       - name: Setup Docker container
         run: |
           cp src/.env-example src/.env
-          ./setup.sh
+          LOG_CHANNEL=none ./setup.sh
   lint:
     runs-on: ubuntu-latest
     steps:

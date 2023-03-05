@@ -21,15 +21,17 @@ setup() {
     # Run a healthcheck to ensure the container(s) are running
     for ((ATTEMPT = 0; ATTEMPT <= 10; ATTEMPT += 1)); do
         if healthcheck != 0; then
+            echo "Failed healthcheck attempt #$ATTEMPT, retrying..."
             sleep 1
         fi
+        echo "Healthcheck passed!"
         exit 0
     done
 }
 
 healthcheck() {
-    docker ps | grep -q crazy-color-clash-site-crazy-color-clash-1 || exit 1
-    docker exec -t crazy-color-clash-site-crazy-color-clash-1 curl -f --silent --output /dev/null http://localhost || exit 1
+    docker ps | grep -q crazy-color-clash-site-crazy-color-clash-1 || return 1
+    docker exec -t crazy-color-clash-site-crazy-color-clash-1 curl -f --silent --output /dev/null http://localhost || return 1
 }
 
 setup

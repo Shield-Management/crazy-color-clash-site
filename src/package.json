@@ -15,7 +15,7 @@
         "@popperjs/core": "^2.11.3",
         "axios": "^0.21",
         "bootstrap": "^5.2.0",
-        "justintime50-styles": "0.2.0",
+        "justintime50-styles": "0.3.0",
         "laravel-mix": "^6.0.6",
         "pineapple-library": "^3.1.0",
         "postcss": "^8.1.14",

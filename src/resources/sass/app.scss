@@ -1,6 +1,6 @@
 // Bootstrap
-@import url("~bootstrap/scss/bootstrap");
+@import "bootstrap/scss/bootstrap";
 
 // Internal
-@import url("~pineapple-library/pineapple/scss/pineapple");
-@import url("stylesheet");
+@import "pineapple-library/pineapple/scss/pineapple";
+@import "stylesheet";

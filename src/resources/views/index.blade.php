@@ -6,13 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="{{ asset('pics/favicon.ico') }}">
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <script src="https://kit.fontawesome.com/0dd4ecd465.js" crossorigin="anonymous"></script>
     <meta name="keywords" content="crazy,color,clash,ios,apple,game,app,phone,player">
     <meta name="description" content="Crazy Color Clash by Justin Hammond - Crazy colorful tapping battles.">
     <meta name="apple-itunes-app" content="app-id=1641436535">{{-- iOS download banner --}}
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W34NSQXHFR"></script>
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -312,8 +312,6 @@
             <p>&#169; <a href="https://justinpaulhammond.com">Justin Hammond</a>, All rights reserved.</p>
         </div>
     </footer>
-
-    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 
 </html>

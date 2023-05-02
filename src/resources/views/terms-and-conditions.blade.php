@@ -5,15 +5,10 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width'>
     <title>Terms &amp; Conditions</title>
-    <style>
-        body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            padding: 1em;
-        }
-    </style>
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 
-<body>
+<body class="container">
     <strong>Terms &amp; Conditions</strong>
     <p>
         By downloading or using the app, these terms will

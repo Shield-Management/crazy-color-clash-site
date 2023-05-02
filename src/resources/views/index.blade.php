@@ -308,7 +308,7 @@
                 Policy</a>
             <a href="/terms-and-conditions" class="nav-link">Terms and
                 Conditions</a>
-            <a href="https://twitter.com/Justintime_50">Contact</a>
+            <a href="https://twitter.com/Justintime_50" class="nav-link">Contact</a>
             <p>&#169; <a href="https://justinpaulhammond.com">Justin Hammond</a>, All rights reserved.</p>
         </div>
     </footer>

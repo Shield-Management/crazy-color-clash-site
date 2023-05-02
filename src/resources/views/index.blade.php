@@ -12,7 +12,6 @@
     <meta name="apple-itunes-app" content="app-id=1641436535">{{-- iOS download banner --}}
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W34NSQXHFR"></script>
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -23,6 +22,7 @@
 
         gtag('config', 'G-W34NSQXHFR');
     </script>
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 
 <body>

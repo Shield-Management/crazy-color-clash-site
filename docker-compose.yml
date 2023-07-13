@@ -13,5 +13,6 @@ services:
 networks:
   traefik:
     name: traefik
+    external: true
   crazy-color-clash:
     name: crazy-color-clash

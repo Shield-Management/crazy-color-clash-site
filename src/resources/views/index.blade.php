@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Crazy Color Clash</title>
+    <title>{{ config('app.name') }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="{{ asset('pics/favicon.ico') }}">
@@ -29,7 +29,7 @@
     <div class="bg-banner text-center">
         <div class="container">
             <img src="{{ asset('pics/icon.png') }}" class="app-icon">
-            <h1>Crazy Color Clash</h1>
+            <h1>{{ config('app.name') }}</h1>
             <h2>Crazy colorful tapping battles</h2>
 
             <br />

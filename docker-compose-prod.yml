@@ -1,5 +1,8 @@
 services:
   crazy-color-clash:
+    build:
+      args:
+        PROD: true
     deploy:
       replicas: 2
       resources:

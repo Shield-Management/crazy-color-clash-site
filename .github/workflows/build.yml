@@ -28,7 +28,7 @@ jobs:
       - name: Run PHP lint
         run: |
           cd src
-          just install lint
+          just install lint-php
   lint-sass:
     runs-on: ubuntu-latest
     steps:
@@ -40,8 +40,7 @@ jobs:
       - name: Run CSS lint
         run: |
           cd src
-          npm install
-          just lint-css
+          just install lint-css
   deploy:
     if: github.ref == 'refs/heads/main'
     needs: ['docker', 'lint-php', 'lint-sass']

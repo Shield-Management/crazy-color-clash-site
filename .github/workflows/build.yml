@@ -28,7 +28,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '20'
-      - name: Run PHP lint
+      - name: Lint project
         run: |
           cd src
           just install lint

@@ -17,7 +17,7 @@ jobs:
           cd src
           cp .env-example .env
           just setup
-  lint-php:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -25,25 +25,16 @@ jobs:
       - uses: shivammathur/setup-php@v2
         with:
           php-version: '8.2'
-      - name: Run PHP lint
-        run: |
-          cd src
-          just install lint-php
-  lint-sass:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: extractions/setup-just@v1
       - uses: actions/setup-node@v3
         with:
           node-version: '20'
-      - name: Run CSS lint
+      - name: Run PHP lint
         run: |
           cd src
-          just install lint-css
+          just install lint
   deploy:
     if: github.ref == 'refs/heads/main'
-    needs: ['docker', 'lint-php', 'lint-sass']
+    needs: ['docker', 'lint']
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to Harvey

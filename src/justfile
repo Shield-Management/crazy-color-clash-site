@@ -1,3 +1,7 @@
+# Clean the project
+clean:
+    composer clean
+
 # Run a coverage report
 coverage:
     composer coverage
@@ -46,3 +50,7 @@ run:
 setup:
     #!/usr/bin/env bash
     bash <(curl -s https://gist.githubusercontent.com/Justintime50/2de9303a491c22627ee502aaa7b1f289/raw/) crazy-color-clash-site crazy-color-clash
+
+# Test the project
+test:
+    composer test

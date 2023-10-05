@@ -64,21 +64,21 @@
             to confuse and disorient your opponent and come out the victor once the time runs out.</p>
 
         <div class="row text-center">
-            <div class="col-lg-3">
-                <p class="capsule">2 PLAYERS</p>
+            <div class="col-lg-3 bg-blue p-3">
+                <p class="capsule text-green">2 PLAYERS</p>
             </div>
-            <div class="col-lg-3">
-                <p class="capsule">1 DEVICE</p>
+            <div class="col-lg-3 bg-purple p-3">
+                <p class="capsule text-pink">1 DEVICE</p>
             </div>
-            <div class="col-lg-3">
-                <p class="capsule">90 SECONDS</p>
+            <div class="col-lg-3 bg-pink p-3">
+                <p class="capsule text-purple">12 POWERUPS</p>
             </div>
-            <div class="col-lg-3">
-                <p class="capsule">12 POWERUPS</p>
+            <div class="col-lg-3 bg-green p-3">
+                <p class="capsule text-blue">90 SECONDS</p>
             </div>
         </div>
 
-        <br />
+        <h2 class="mt-5">How to Play</h2>
 
         <p class="text-center">Tap your half of the screen when your background color matches the color name shown.
             Watch out, the names of
@@ -88,8 +88,8 @@
             combination against your opponent or skip powerups completely and stick to colors alone. Winner has the most
             points when time runs out. Do you have what it takes to win, or will you tap out?</p>
 
-        <div class="row">
-            <div class="col-sm-6">
+        <div class="row mt-5">
+            <div class="col-md-6 text-start">
                 <h3>Features</h3>
                 <ul>
                     <li>2 players on 1 device</li>
@@ -103,11 +103,12 @@
                 </ul>
 
                 <a href="https://apps.apple.com/us/app/crazy-color-clash/id1641436535?itsct=apps_box_badge&amp;itscg=30200"
-                    style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img
-                        src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1663718400&h=35a801062337f87a46a0f0c6b1f38ae1"
-                        alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>
+                    style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;">
+                    <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1663718400&h=35a801062337f87a46a0f0c6b1f38ae1"
+                        alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;">
+                </a>
             </div>
-            <div class="col-sm-6 text-center">
+            <div class="col-md-6">
                 <div class="pa-video-container">
                     <iframe width="476" height="847" src="https://www.youtube.com/embed/3rXwlH88iWU"
                         title="Crazy Color Clash Teaser - iOS Game" frameborder="0"

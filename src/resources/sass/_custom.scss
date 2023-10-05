@@ -45,6 +45,22 @@
   color: $color-white;
 }
 
+.text-blue {
+  color: $color-blue;
+}
+
+.text-purple {
+  color: $color-purple;
+}
+
+.text-pink {
+  color: $color-pink;
+}
+
+.text-green {
+  color: $color-green;
+}
+
 .app-icon {
   max-width: 200px;
   box-shadow: $box-shadow;
@@ -68,7 +84,6 @@
   border-radius: 30px;
   margin: 10px;
   background-color: $color-white;
-  color: $color-blue;
   padding: 5px;
   font-size: 3vmin;
 }

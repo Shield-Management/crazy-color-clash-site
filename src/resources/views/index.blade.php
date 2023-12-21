@@ -41,7 +41,7 @@
 
             <div class="row">
                 <div class="col">
-                    <img src="{{ asset('pics/game-min.png') }}" class="game-image img-fluid">
+                    <img src="{{ asset('pics/surprise-min.png') }}" class="game-image img-fluid">
                 </div>
                 <div class="col">
                     <img src="{{ asset('pics/tutorial-min.png') }}" class="game-image img-fluid">

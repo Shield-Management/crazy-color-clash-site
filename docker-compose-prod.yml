@@ -18,4 +18,6 @@ services:
       - 'traefik.http.routers.crazy-color-clash.tls=true'
       - 'traefik.http.routers.crazy-color-clash.tls.certresolver=letsencrypt'
     volumes:
-      - ./src/storage:/var/www/html/storage
+      - ./src/storage/app:/var/www/html/storage/app
+      - ./src/storage/logs:/var/www/html/storage/logs
+      - ./src/storage/database:/var/www/html/storage/database

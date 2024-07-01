@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="{{ asset('pics/favicon.ico') }}">
-    <script src="https://kit.fontawesome.com/0dd4ecd465.js" crossorigin="anonymous"></script>
     <meta name="keywords" content="crazy,color,clash,ios,apple,game,app,phone,player">
     <meta name="description" content="Crazy Color Clash by Justin Hammond - Crazy colorful tapping battles.">
     <meta name="apple-itunes-app" content="app-id=1641436535">{{-- iOS download banner --}}

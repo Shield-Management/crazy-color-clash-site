@@ -16,7 +16,6 @@ services:
     labels:
       - 'traefik.http.routers.crazy-color-clash.rule=Host(`crazycolorclash.com`) || Host(`www.crazycolorclash.com`)'
       - 'traefik.http.routers.crazy-color-clash.tls=true'
-      - 'traefik.http.routers.crazy-color-clash.tls.certresolver=letsencrypt'
     volumes:
       - ./src/storage/app:/var/www/html/storage/app
       - ./src/storage/logs:/var/www/html/storage/logs

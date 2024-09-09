@@ -1,6 +1,7 @@
 services:
   crazy-color-clash:
     labels:
+      - 'traefik.enable=true'
       - 'traefik.http.routers.crazy-color-clash.rule=Host(`crazycolorclash.localhost`)'
     volumes:
       - ./src:/var/www/html

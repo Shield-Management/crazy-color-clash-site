@@ -5,9 +5,6 @@ services:
     networks:
       - traefik
       - crazy-color-clash
-    labels:
-      - 'traefik.enable=true'
-      - 'traefik.docker.network=traefik'
     env_file:
       - src/.env
 

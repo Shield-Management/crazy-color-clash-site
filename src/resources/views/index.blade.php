@@ -31,23 +31,23 @@
             <h1>{{ config('app.name') }}</h1>
             <h2>Crazy colorful tapping battles</h2>
 
-            <br />
-
-            <a href="https://apps.apple.com/us/app/crazy-color-clash/id1641436535?itscg=30200&itsct=apps_box_badge&mttnsubad=1641436535"
-                style="display: inline-block;">
-                <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1663718400"
-                    alt="Download on the App Store"
-                    style="width: 245px; height: 82px; vertical-align: middle; object-fit: contain;" />
-            </a>
+            <div class="my-4">
+                <a href="https://apps.apple.com/us/app/crazy-color-clash/id1641436535?itscg=30200&itsct=apps_box_badge&mttnsubad=1641436535"
+                    style="display: inline-block;">
+                    <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1663718400"
+                        alt="Download on the App Store"
+                        style="width: 245px; height: 82px; vertical-align: middle; object-fit: contain;" />
+                </a>
+            </div>
 
             <div class="row">
-                <div class="col">
+                <div class="col-md-4">
                     <img src="{{ asset('pics/surprise-min.png') }}" class="game-image img-fluid">
                 </div>
-                <div class="col">
+                <div class="col-md-4">
                     <img src="{{ asset('pics/tutorial-min.png') }}" class="game-image img-fluid">
                 </div>
-                <div class="col">
+                <div class="col-md-4">
                     <img src="{{ asset('pics/score-min.png') }}" class="game-image img-fluid">
                 </div>
             </div>
@@ -90,31 +90,39 @@
             points when time runs out. Do you have what it takes to win, or will you tap out?</p>
 
         <div class="row mt-5">
-            <div class="col-md-6 text-start">
-                <h3>Features</h3>
-                <ul>
-                    <li>2 players on 1 device</li>
-                    <li>10 crazy colors to match</li>
-                    <li>12 unique powerups to choose from or have randomized</li>
-                    <li>90 second addictive gameplay</li>
-                    <li>3 challenging game modes (2 player clash with colors and powerups, 2 player clash with colors
-                        only,
-                        single player practice)</li>
-                    <li>Score tracking so you know how many taps you got right, wrong, and missed</li>
-                </ul>
-
-                <a href="https://apps.apple.com/us/app/crazy-color-clash/id1641436535?itsct=apps_box_badge&amp;itscg=30200"
-                    style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;">
-                    <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1663718400&h=35a801062337f87a46a0f0c6b1f38ae1"
-                        alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;">
-                </a>
+            <div class="col-lg-6">
+                <div class="pa-card text-start">
+                    <h3>Features</h3>
+                    <ul>
+                        <li>2 players on 1 device</li>
+                        <li>10 crazy colors to match</li>
+                        <li>12 unique powerups to choose from or have randomized</li>
+                        <li>90 second addictive gameplay</li>
+                        <li>3 challenging game modes (2 player clash with colors and powerups, 2 player clash with
+                            colors
+                            only,
+                            single player practice)</li>
+                        <li>Score tracking so you know how many taps you got right, wrong, and missed</li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-md-6">
-                <div class="pa-video-container">
-                    <iframe width="476" height="847" src="https://www.youtube.com/embed/3rXwlH88iWU"
-                        title="Crazy Color Clash Teaser - iOS Game" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+            <div class="col-lg-6">
+                <div class="pa-card">
+                    <div class="pa-video-container">
+                        <iframe width="476" height="847" src="https://www.youtube.com/embed/3rXwlH88iWU"
+                            title="Crazy Color Clash Teaser - iOS Game" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <div class="mb-2 mt-4">
+                        <a href="https://apps.apple.com/us/app/crazy-color-clash/id1641436535?itscg=30200&itsct=apps_box_badge&mttnsubad=1641436535"
+                            style="display: inline-block;">
+                            <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1663718400"
+                                alt="Download on the App Store"
+                                style="width: 245px; height: 82px; vertical-align: middle; object-fit: contain;" />
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -136,22 +144,22 @@
     <div class="bg-pink">
         <div class="container text-center">
             <div class="row">
-                <h3>Basic Powerups</h3>
+                <h2>Basic Powerups</h2>
                 <p>Free - Included in Game</p>
-                <div class="col">
-                    <h4>Surprise</h4>
+                <div class="col-md-4">
+                    <h3>Surprise</h3>
                     <img src="{{ asset('pics/surprise-min.png') }}" class="game-image img-fluid">
                     <p>Shoots a colorful confetti cannon on your opponent's screen to distract them.</p>
                 </div>
-                <div class="col">
-                    <h4>Lockout</h4>
+                <div class="col-md-4">
+                    <h3>Lockout</h3>
                     <img src="{{ asset('pics/lockout-min.png') }}" class="game-image img-fluid">
                     <p>Locks your opponents screen. They must tap 5 times before they can match colors again.
                         Powerups
                         cannot be used during Lockout!</p>
                 </div>
-                <div class="col">
-                    <h4>Blackout</h4>
+                <div class="col-md-4">
+                    <h3>Blackout</h3>
                     <img src="{{ asset('pics/blackout-min.png') }}" class="game-image img-fluid">
                     <p>Changes your opponent's background color to black making it impossible to match colors. Taps
                         during a
@@ -164,20 +172,20 @@
     <div class="bg-purple">
         <div class="container text-center">
             <div class="row">
-                <h3>Powerup Pack 1</h3>
+                <h2>Powerup Pack 1</h2>
                 <p>$0.99 - Unlocks 3 powerups</p>
-                <div class="col">
-                    <h4>Boring</h4>
+                <div class="col-md-4">
+                    <h3>Boring</h3>
                     <img src="{{ asset('pics/boring-min.png') }}" class="game-image img-fluid">
                     <p>Removes the changing color name's font color, making it easier to match taps.</p>
                 </div>
-                <div class="col">
-                    <h4>Bombs</h4>
+                <div class="col-md-4">
+                    <h3>Bombs</h3>
                     <img src="{{ asset('pics/bombs-min.png') }}" class="game-image img-fluid">
                     <p>Replaces your opponent's powerups with bombs. Tapping a bomb will lose a point!</p>
                 </div>
-                <div class="col">
-                    <h4>Clash</h4>
+                <div class="col-md-4">
+                    <h3>Clash</h3>
                     <img src="{{ asset('pics/clash-min.png') }}" class="game-image img-fluid">
                     <p>Starts a duel with your opponent. Tapping shifts the count in your favor. First to 10 taps
                         receives 5
@@ -190,21 +198,21 @@
     <div class="bg-blue">
         <div class="container text-center">
             <div class="row">
-                <h3>Powerup Pack 2</h3>
+                <h2>Powerup Pack 2</h2>
                 <p>$0.99 - Unlocks 3 powerups</p>
-                <div class="col">
-                    <h4>Reverse</h4>
+                <div class="col-md-4">
+                    <h3>Reverse</h3>
                     <img src="{{ asset('pics/reverse-min.png') }}" class="game-image img-fluid">
                     <p>Reverses your opponent's color name direction.</p>
                 </div>
-                <div class="col">
-                    <h4>Monochrome</h4>
+                <div class="col-md-4">
+                    <h3>Monochrome</h3>
                     <img src="{{ asset('pics/monochrome-min.png') }}" class="game-image img-fluid">
                     <p>Changes your opponent's background to gray. They will need to guess if their colors match!
                     </p>
                 </div>
-                <div class="col">
-                    <h4>Nuke</h4>
+                <div class="col-md-4">
+                    <h3>Nuke</h3>
                     <img src="{{ asset('pics/nuke-min.png') }}" class="game-image img-fluid">
                     <p>Blows away half of all of your opponents powerups.</p>
                 </div>
@@ -215,25 +223,25 @@
     <div class="bg-green">
         <div class="container text-center">
             <div class="row">
-                <h3>Powerup Pack 3</h3>
+                <h2>Powerup Pack 3</h2>
                 <p>$0.99 - Unlocks 3 powerups</p>
-                <div class="col">
-                    <h4>Thief</h4>
+                <div class="col-md-4">
+                    <h3>Thief</h3>
                     <img src="{{ asset('pics/thief-min.png') }}" class="game-image img-fluid">
                     <p>75% chance of stealing a point from your opponent. Be careful, the other 25% of the time you
                         will
                         lose a point yourself!</p>
                 </div>
-                <div class="col">
-                    <h4>Double Tap</h4>
+                <div class="col-md-4">
+                    <h3>Double Tap</h3>
                     <img src="{{ asset('pics/double-tap-min.png') }}" class="game-image img-fluid">
                     <p>Requires your opponent to double tap their color on a match. Failing to double tap will lose
                         a
                         point!
                     </p>
                 </div>
-                <div class="col">
-                    <h4>Shield</h4>
+                <div class="col-md-4">
+                    <h3>Shield</h3>
                     <img src="{{ asset('pics/shield-min.png') }}" class="game-image img-fluid">
                     <p>Protects you against powerups.</p>
                 </div>
@@ -249,13 +257,13 @@
                 year
                 old boys love playing it as well!" - <b>Brady</b></p>
             <div class="row">
-                <div class="col">
+                <div class="col-md-4">
                     <img src="{{ asset('pics/disneyland-playing.jpg') }}" class="testimonial-image">
                 </div>
-                <div class="col">
+                <div class="col-md-4">
                     <img src="{{ asset('pics/kids-playing-in-line.jpg') }}" class="testimonial-image">
                 </div>
-                <div class="col">
+                <div class="col-md-4">
                     <img src="{{ asset('pics/kids-playing.jpg') }}" class="testimonial-image">
                 </div>
             </div>
@@ -269,7 +277,8 @@
             Store
             offering. Hundreds of hours and thousands of play tests later - Crazy Color Clash was brought to the
             public.
-            You can find devlog videos detailing the development of the project while it was in its infancy or read my
+            You can find devlog videos detailing the development of the project while it was in its infancy or read
+            my
             <a
                 href="https://blog.justinpaulhammond.com/justin-hammond/i-built-an-i-os-game-crazy-color-clash-heres-what-i-learned">blog
                 post</a> detailing the entire process.

@@ -33,10 +33,12 @@
 
             <br />
 
-            <a href="https://apps.apple.com/us/app/crazy-color-clash/id1641436535?itsct=apps_box_badge&amp;itscg=30200"
-                style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img
-                    src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1663718400&h=35a801062337f87a46a0f0c6b1f38ae1"
-                    alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>
+            <a href="https://apps.apple.com/us/app/crazy-color-clash/id1641436535?itscg=30200&itsct=apps_box_badge&mttnsubad=1641436535"
+                style="display: inline-block;">
+                <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1663718400"
+                    alt="Download on the App Store"
+                    style="width: 245px; height: 82px; vertical-align: middle; object-fit: contain;" />
+            </a>
 
             <div class="row">
                 <div class="col">

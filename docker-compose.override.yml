@@ -3,5 +3,12 @@ services:
     labels:
       - 'traefik.enable=true'
       - 'traefik.http.routers.crazy-color-clash.rule=Host(`crazycolorclash.localhost`)'
+    networks:
+      - traefik
     volumes:
       - ./src:/var/www/html
+
+networks:
+  traefik:
+    name: traefik
+    external: true

@@ -2,15 +2,5 @@ services:
   crazy-color-clash:
     build: .
     restart: always
-    networks:
-      - traefik
-      - crazy-color-clash
     env_file:
       - src/.env
-
-networks:
-  traefik:
-    name: traefik
-    external: true
-  crazy-color-clash:
-    name: crazy-color-clash
